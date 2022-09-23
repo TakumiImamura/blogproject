@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block header %}{% endblock header %}{% block content%}<form action="" method="post"><!--actionはどのurlに遷移させるか-->    {% csrf_token %}    {{ form.as_p }}    <input type="submit" value="送信する"></form>{% endblock content%}
